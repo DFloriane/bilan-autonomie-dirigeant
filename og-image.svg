@@ -1,0 +1,25 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16233d"/>
+      <stop offset="100%" stop-color="#1f3358"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- compass mark -->
+  <g transform="translate(150,315)">
+    <circle r="115" fill="#101a2e"/>
+    <circle r="96" fill="none" stroke="#d9ad6b" stroke-width="3" opacity="0.55"/>
+    <polygon points="0,-84 14,0 0,84 -14,0" fill="#b8863c"/>
+    <polygon points="-84,0 0,-11 84,0 0,11" fill="#d9ad6b"/>
+    <circle r="11" fill="#faf7f2"/>
+    <circle r="11" fill="none" stroke="#16233d" stroke-width="2.5"/>
+  </g>
+
+  <text x="345" y="285" font-family="Liberation Sans, Arial, sans-serif" font-size="58" font-weight="700" fill="#ffffff">Bilan Autonomie</text>
+  <text x="345" y="352" font-family="Liberation Sans, Arial, sans-serif" font-size="58" font-weight="700" fill="#d9ad6b">Dirigeant</text>
+  <text x="347" y="405" font-family="Liberation Sans, Arial, sans-serif" font-size="27" fill="#cfd6e4">Votre entreprise d&#233;pend-elle trop de vous ?</text>
+  <rect x="347" y="440" width="640" height="3" fill="#d9ad6b" opacity="0.5"/>
+  <text x="347" y="480" font-family="Liberation Sans, Arial, sans-serif" font-size="22" fill="#9aa8c2">Diagnostic express pour dirigeants de TPE &#8226; Landes</text>
+</svg>

@@ -5,6 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bilan Autonomie Dirigeant — Votre entreprise dépend-elle trop de vous ?</title>
 <meta name="description" content="Bilan Autonomie Dirigeant : un diagnostic express d'une demi-journée pour dirigeants de TPE, pour évaluer et réduire la dépendance de l'entreprise à son dirigeant.">
+
+<!-- À METTRE À JOUR : remplacer par l'URL réelle une fois le site en ligne (voir Guide_mise_en_ligne.md) -->
+<link rel="canonical" href="https://VOTRE-URL-GITHUB-PAGES/">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Bilan Autonomie Dirigeant">
+<meta property="og:title" content="Bilan Autonomie Dirigeant — Votre entreprise dépend-elle trop de vous ?">
+<meta property="og:description" content="Diagnostic express d'une demi-journée pour dirigeants de TPE (Landes) : identifier la dépendance au dirigeant et repartir avec 3 actions concrètes.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:url" content="https://VOTRE-URL-GITHUB-PAGES/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bilan Autonomie Dirigeant">
+<meta name="twitter:description" content="Votre entreprise dépend-elle trop de vous ? Diagnostic express pour dirigeants de TPE, Landes.">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bilan Autonomie Dirigeant",
+  "image": "assets/og-image.png",
+  "description": "Diagnostic express d'une demi-journée pour dirigeants de TPE (moins de 10 salariés) : évaluation de la dépendance de l'entreprise à son dirigeant sur 5 axes, avec 3 recommandations datées.",
+  "founder": {
+    "@type": "Person",
+    "name": "Floriane Dybul"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "36 Impasse Charles Trenet",
+    "postalCode": "40280",
+    "addressLocality": "Saint-Pierre-du-Mont",
+    "addressCountry": "FR"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Mont-de-Marsan et agglomération, Landes"
+  },
+  "email": "diagnostic.tpe.landes@gmail.com",
+  "telephone": "+33645295464",
+  "priceRange": "340 €",
+  "url": "https://VOTRE-URL-GITHUB-PAGES/"
+}
+</script>
+
 <style>
   :root{
     --navy:#16233d;
@@ -41,8 +90,9 @@
     display:flex;align-items:center;justify-content:space-between;
     padding:16px 24px;max-width:1080px;margin:0 auto;
   }
-  .brand{font-weight:700;font-size:1.05rem;letter-spacing:.02em;}
+  .brand{font-weight:700;font-size:1.05rem;letter-spacing:.02em;display:flex;align-items:center;gap:10px;}
   .brand span{color:var(--gold-light);}
+  .brand svg{width:30px;height:30px;flex-shrink:0;}
   nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0;}
   nav ul a{text-decoration:none;color:#e7e9ee;font-size:.95rem;}
   nav ul a:hover{color:var(--gold-light);}
@@ -92,6 +142,7 @@
     margin:0 auto 36px;
   }
   .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .hero-mark{width:76px;height:76px;margin:0 auto 24px;display:block;}
   .btn-primary{
     background:var(--gold);
     color:#1b1204;
@@ -193,12 +244,23 @@
   .axe-card .num{
     display:inline-flex;
     align-items:center;justify-content:center;
-    width:36px;height:36px;
-    border-radius:50%;
+    width:60px;height:60px;
+    border-radius:16px;
     background:var(--navy);
     color:var(--gold-light);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .axe-card .num svg{width:30px;height:30px;}
+  .axe-card .num .idx{
+    position:absolute;top:-8px;right:-8px;
+    background:var(--gold);
+    color:#1b1204;
+    font-size:.68rem;
     font-weight:700;
-    margin-bottom:14px;
+    width:20px;height:20px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
   }
   .axe-card h3{font-size:1.02rem;margin:0 0 8px;color:var(--navy);}
   .axe-card p{font-size:.88rem;color:var(--muted);margin:0;}
@@ -302,7 +364,16 @@
 
 <header>
   <div class="nav">
-    <div class="brand">Bilan Autonomie <span>Dirigeant</span></div>
+    <div class="brand">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="100" cy="100" r="96" fill="#0d1526"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#d9ad6b" stroke-width="3" opacity="0.55"/>
+        <polygon points="100,32 112,100 100,168 88,100" fill="#b8863c"/>
+        <polygon points="32,100 100,88 168,100 100,112" fill="#d9ad6b"/>
+        <circle cx="100" cy="100" r="10" fill="#faf7f2"/>
+      </svg>
+      Bilan Autonomie <span>Dirigeant</span>
+    </div>
     <nav>
       <ul>
         <li><a href="#bilan">Le bilan</a></li>
@@ -317,6 +388,14 @@
 
 <section class="hero">
   <div class="wrap">
+    <svg class="hero-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="100" cy="100" r="96" fill="#0d1526"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#d9ad6b" stroke-width="2.5" opacity="0.55"/>
+      <polygon points="100,32 112,100 100,168 88,100" fill="#b8863c"/>
+      <polygon points="32,100 100,88 168,100 100,112" fill="#d9ad6b"/>
+      <circle cx="100" cy="100" r="9" fill="#faf7f2"/>
+      <circle cx="100" cy="100" r="9" fill="none" stroke="#16233d" stroke-width="2"/>
+    </svg>
     <span class="eyebrow">Pour dirigeants de TPE — moins de 10 salariés</span>
     <h1>Votre entreprise dépend-elle trop de vous ?</h1>
     <p class="lead">Un regard extérieur structuré, en une demi-journée, pour identifier ce qui repose trop sur vous — et repartir avec 3 actions concrètes et priorisées.</p>
@@ -360,27 +439,67 @@
     </div>
     <div class="axes-grid">
       <div class="axe-card">
-        <div class="num">1</div>
+        <div class="num">
+          <span class="idx">1</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/>
+            <line x1="12" y1="9.4" x2="12" y2="4.6"/><circle cx="12" cy="3.4" r="1.3" fill="currentColor" stroke="none"/>
+            <line x1="14.1" y1="10.6" x2="18.6" y2="7.2"/><circle cx="19.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/>
+            <line x1="14.1" y1="13.4" x2="18.6" y2="16.8"/><circle cx="19.6" cy="17.6" r="1.3" fill="currentColor" stroke="none"/>
+            <line x1="9.9" y1="13.4" x2="5.4" y2="16.8"/><circle cx="4.4" cy="17.6" r="1.3" fill="currentColor" stroke="none"/>
+            <line x1="9.9" y1="10.6" x2="5.4" y2="7.2"/><circle cx="4.4" cy="6.4" r="1.3" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
         <h3>Organisation &amp; dépendance</h3>
         <p>Ce qui ne peut fonctionner sans vous au quotidien.</p>
       </div>
       <div class="axe-card">
-        <div class="num">2</div>
+        <div class="num">
+          <span class="idx">2</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="2.5" width="14" height="19" rx="1.6"/>
+            <line x1="8" y1="7.2" x2="16" y2="7.2"/>
+            <line x1="8" y1="11" x2="16" y2="11"/>
+            <path d="M8 15.2 l2 2 l4.5 -4.5"/>
+          </svg>
+        </div>
         <h3>Process &amp; formalisation</h3>
         <p>Ce qui est écrit, transmissible — et ce qui ne l'est pas.</p>
       </div>
       <div class="axe-card">
-        <div class="num">3</div>
+        <div class="num">
+          <span class="idx">3</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="20" x2="20.5" y2="20"/>
+            <rect x="6" y="13" width="3.2" height="7" fill="currentColor" stroke="none"/>
+            <rect x="11.4" y="9" width="3.2" height="11" fill="currentColor" stroke="none" opacity="0.75"/>
+            <rect x="16.8" y="5" width="3.2" height="15" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
         <h3>Lisibilité économique</h3>
         <p>La clarté de votre pilotage financier au quotidien.</p>
       </div>
       <div class="axe-card">
-        <div class="num">4</div>
+        <div class="num">
+          <span class="idx">4</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.3"/>
+            <path d="M12 12 L12 3.7 A8.3 8.3 0 0 1 19.7 15.6 Z" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
         <h3>Clients &amp; dépendance commerciale</h3>
         <p>Le poids de votre relation directe dans la fidélisation.</p>
       </div>
       <div class="axe-card">
-        <div class="num">5</div>
+        <div class="num">
+          <span class="idx">5</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="8.2" cy="8" r="3"/>
+            <path d="M2.5 20.2c0-4.6 3-7.7 5.7-7.7s5.7 3.1 5.7 7.7"/>
+            <circle cx="16.3" cy="7" r="2.5" opacity="0.65"/>
+            <path d="M11.2 19.6c0-3.9 2.6-6.7 5.1-6.7s5.1 2.8 5.1 6.7" opacity="0.65"/>
+          </svg>
+        </div>
         <h3>Équipe &amp; relais</h3>
         <p>Les relais réels en votre absence.</p>
       </div>

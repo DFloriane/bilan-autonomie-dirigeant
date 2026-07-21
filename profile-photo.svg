@@ -1,0 +1,10 @@
+<svg viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" fill="#16233d"/>
+  <circle cx="360" cy="360" r="300" fill="none" stroke="#d9ad6b" stroke-width="6" opacity="0.5"/>
+  <g transform="translate(360,360)">
+    <polygon points="0,-190 32,0 0,190 -32,0" fill="#b8863c"/>
+    <polygon points="-190,0 0,-25 190,0 0,25" fill="#d9ad6b"/>
+    <circle r="24" fill="#faf7f2"/>
+    <circle r="24" fill="none" stroke="#16233d" stroke-width="5"/>
+  </g>
+</svg>

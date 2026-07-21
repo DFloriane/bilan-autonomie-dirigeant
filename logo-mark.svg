@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="96" fill="#16233d"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#d9ad6b" stroke-width="2.5" opacity="0.55"/>
+  <!-- compass star -->
+  <polygon points="100,32 112,100 100,168 88,100" fill="#b8863c"/>
+  <polygon points="32,100 100,88 168,100 100,112" fill="#d9ad6b"/>
+  <circle cx="100" cy="100" r="9" fill="#faf7f2"/>
+  <circle cx="100" cy="100" r="9" fill="none" stroke="#16233d" stroke-width="2"/>
+</svg>
